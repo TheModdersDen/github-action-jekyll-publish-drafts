@@ -1,6 +1,6 @@
 name: 'Jekyll Publish Drafts'
 description: 'Publish drafts with a date greater than the current time'
-author: 'soywiz'
+author: 'TheModdersDen'
 branding:
   icon: upload-cloud
   color: green
@@ -15,7 +15,7 @@ inputs:
   branch:
     description: 'Destination branch to push changes'
     required: false
-    default: 'master'
+    default: 'production'
   jekyll_path:
     description: 'Directory containing the jekyll root folder.'
     required: false
