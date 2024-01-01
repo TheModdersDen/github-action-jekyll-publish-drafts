@@ -242,7 +242,7 @@ function main() {
 			`Current folder ${process.cwd()} . JEKYLL_PATH=${JEKYLL_PATH}`
 		);
 		console.warn(`GITHUB_ACTOR=${GITHUB_ACTOR}`);
-		if (GITHUB_ACTOR) {
+		if (GITHUB_ACTOR == "") {
 			yield execFile("git", ["config", "--global", "user.email", GIT_EMAIL]);
 			yield execFile("git", ["config", "--global", "user.name", GIT_USERNAME]);
 		}
